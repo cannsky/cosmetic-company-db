@@ -3,7 +3,7 @@ as
 select avg(cb.totalPrice) as averageCost
 from Customer c inner join Address a on c.customerID = a.customerID inner join CustomerOrder co on c.customerID=co.customerID
 inner join CustomerProductOfOrder cpo on cpo.orderID=co.orderID inner join CustomerBill cb on cb.orderID=cpo.orderID
-where a.city = '�stanbul'
+where a.city = 'Istanbul'
 
 CREATE VIEW mostOrderedProduct
 as
